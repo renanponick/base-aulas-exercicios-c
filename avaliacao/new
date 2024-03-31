@@ -1,0 +1,46 @@
+
+
+string asta = "*",astb;
+cout << asta << "\n"; 
+    for (int l=0; l<4; l++){
+    
+        astb = asta;
+        asta += "*";
+            
+        cout << asta<< "\n";
+        cout << astb<< "\n";
+        cout << asta<< "\n";
+    
+    }
+
+
+
+
+    int qtd_sequencias, i, primeiro = 0, segundo = 1;
+        cout << "Digite a quantidade de sequências a serem impressas: ";
+        cin >> qtd_sequencias;
+        cout << "\n";
+        for(i=1; i <= qtd_sequencias; i++) {
+	    	  for(primeiro; primeiro < segundo; primeiro++) {
+	    			cout << "*";
+				  }
+				  segundo += i + 1;
+				  cout << "\n";
+				  for(primeiro; primeiro < segundo; primeiro++) {
+		    	  cout << "*";
+			  	}
+				  cout << "\n";
+				  segundo += i;
+				  for(primeiro; primeiro < segundo; primeiro++) {
+		    	  cout << "*";
+				  }
+				  cout << "\n";
+				  segundo += i + 1;
+				}
+				
+				cout << "\n\n--------------------------------------------";
+				cout << "\n\n";
+				system("pause");
+				cout << "Aperte qualquer tecla para continuar...";
+				system("cls");
+				break;
